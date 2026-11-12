@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Space Defender - Arcade Edition</title>
+   <!-- Linked external stylesheet -->
+   <link rel="stylesheet" href="style.css">
+   <!-- Linked external JavaScript with defer -->
+   <script src="game.js" defer></script>
+</head>
+<body>
+
+   <header>
+      <h1 class="floating-title">SPACE DEFENDER</h1>
+      <p class="author-credit">Developed by [Your Name Here]</p>
+   </header>
+
+   <main>
+      <section class="lore-box">
+         <h2>Mission Briefing</h2>
+         <p>
+            Sector 7 is under siege by the relentless Kryll Armada. As the pilot of the 
+            last remaining V-9 Starfighter, you are humanity's final line of defense. 
+            Intercept incoming alien dreadnoughts before they breach the planetary shield!
+         </p>
+      </section>
+
+      <div class="hud">
+         <span>SCORE: <strong id="scoreDisplay">0</strong></span>
+         <span>LIVES: <strong id="livesDisplay">3</strong></span>
+      </div>
+
+      <div class="canvas-container">
+         <canvas id="gameCanvas" width="600" height="450"></canvas>
+      </div>
+
+      <div class="controls-area">
+         <!-- Animated Play/Restart Button -->
+         <button id="playBtn" class="animated-btn">LAUNCH MISSION</button>
+         <button id="muteBtn" class="secondary-btn">Audio: ON</button>
+      </div>
+
+      <section class="instructions-box">
+         <h3>Flight Controls</h3>
+         <p>
+            Use <strong>[&larr;]</strong> and <strong>[&rarr;]</strong> Arrow Keys to steer your starfighter.<br>
+            Press <strong>[Spacebar]</strong> to fire plasma torpedoes.
+         </p>
+      </section>
+   </main>
+
+</body>
+</html>
